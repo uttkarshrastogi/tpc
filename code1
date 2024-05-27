@@ -1,0 +1,34 @@
+void main() {
+  
+  List<List<int>> grid = [[]];
+  
+  //we can do this by DFS
+  
+  List<int> findIsland(List<List<int>> grid){
+  if(grid.isEmpty){
+    return [0,0];
+  }
+    int rowLength = grid.length;
+    int colLength = grid[0].length;
+    int countIsland =0;
+
+    
+    for(int i = 0; i<rowLength;i++){
+      
+      for(int j = 0 ; j<colLength;j++){
+       countIsland = _dfs(i,j,rowLength,colLength,grid,countIsland);
+        countIsland = count;
+      }
+      
+}
+    
+  }
+   int _dfs(int i , int j ,int rowLength, int colLength ,grid,int count){
+     if(i <=rowLength||j<=colLength || grid[i][j]==0 ){
+       return 0;
+     }
+     
+     count += _dfs(i+1,j,rowLength,)
+     
+   }
+}
